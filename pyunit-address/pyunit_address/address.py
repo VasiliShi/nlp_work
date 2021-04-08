@@ -55,6 +55,8 @@ class Address:
     def add_vague_text(self, words: [str, Iterable], separators='-'):
         """增加地址词语
 
+        这个设计方式兼容性非常的好，
+        
         传入的参数可以是：一个词语、一个列表、一个元组、甚至是一个文件地址，文件地址里面是包含一列一个词语
 
         格式1： 只增加一个词

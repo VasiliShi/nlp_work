@@ -41,7 +41,7 @@ def search(cls, link: str = '-') -> str:
     n = []
     while cls.parent:
         n.append(cls.value)
-        cls = cls.parent
+        cls = cls.parent # 迭代过程，不断的找父节点
     return link.join(reversed(n))
 
 
